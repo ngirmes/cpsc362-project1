@@ -8,12 +8,10 @@
 
 using namespace std;
 
-
-
-    //this will get book name from main.cpp
-  void   ssearch::getbook(string x){
-        book = x;
-    }
+//this will get book name from main.cpp
+void   ssearch::getbook(string x){
+    book = x;
+}
     
 void ssearch::searchfile() {
     
@@ -27,7 +25,7 @@ void ssearch::searchfile() {
     
     //test if file is open
     if (myfile.is_open()) {
-        cout << " file open" << endl;
+        cout << "...SEARCHING..." << endl;
     }
     
     else {
