@@ -8,12 +8,25 @@
 
 using namespace std;
 
-//this will get book name from main.cpp
-void   ssearch::getbook(string x){
-    book = x;
-}
+
+    //this will get book name from main.cpp
+  void   ssearch::getname(string x){
+        input = x;
+    }
+
+void ssearch::full_list(){
     
-void ssearch::searchfile() {
+    for (size_t i = 1; i <= book_name.size(); i++){
+        
+        cout <<"Name of book: " << book_name[i] << endl;
+        cout <<"Author: " <<authorr[i] << endl;
+        cout <<"Status: " <<statuss[i] << endl << endl;
+        
+        
+    }
+}
+
+void ssearch::upload_books(){
     
     string word;
     string line;
@@ -25,7 +38,7 @@ void ssearch::searchfile() {
     
     //test if file is open
     if (myfile.is_open()) {
-        cout << "...SEARCHING..." << endl;
+        cout << "" << endl;
     }
     
     else {
@@ -77,35 +90,56 @@ void ssearch::searchfile() {
     myfile.close();
     
     
+}
+    
+void ssearch::word() {
+    
+    
     for (size_t i = 0; i <= book_name.size(); i++){
         
-        
-        // This function will search for full name of the book
-        
-        
-        
-        if (book == "f" ) {
-            cout <<"Name of book: " << book_name[i] << endl;
-            cout <<"Author: " <<authorr[i] << endl;
-            cout <<"Status: " <<statuss[i] << endl << endl;
-        }
-        
-        else{
-            
-            // This function will search for a word of the person don't know the full title
+           string word;
         
             word = book_name[i];
             istringstream iss(word);
 
             while(iss >> word) {
-                if(word == book){
+                if(word == input){
                     cout <<"Name of book: " << book_name[i] << endl;
                     cout <<"Author: " <<authorr[i] << endl;
                     cout <<"Status: " <<statuss[i] << endl << endl;
                 }
         
                 
-            }
+            
+        
+            
+        }
+        
+    }
+    
+}
+
+
+    
+    
+void ssearch::genree() {
+    
+    for (size_t i = 0; i <= book_name.size(); i++){
+        
+           string word;
+        
+            word = genre[i];
+            istringstream iss(word);
+
+            while(iss >> word) {
+                if(word == input){
+                    cout <<"Name of book: " << book_name[i] << endl;
+                    cout <<"Author: " <<authorr[i] << endl;
+                    cout <<"Status: " <<statuss[i] << endl << endl;
+                }
+        
+                
+            
         
             
         }

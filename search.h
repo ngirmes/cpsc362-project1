@@ -21,7 +21,7 @@ using namespace std;
 class ssearch
 {
 public:
-    vector<string> book_name;
+ vector<string> book_name;
     vector<string> authorr;
     vector<string> statuss;
     vector<string> genre;
@@ -30,17 +30,23 @@ public:
     vector<string> category;
     vector<string> POV;
     
-    void getbook(string x);
+    void getname(string x);
     
     
-    // will search the file
-    void searchfile();
+    // will upload the information of the file to the vectors
+    void upload_books();
     
-    //search vector
+    //will display all the file book
+    void full_list();
     
+    //will search depending of the word for example "Harry" will display all books that has harry in them.
+    void word();
     
+    //will search book by genre
+    void genree();
+
 private:
-    string book;
+    string input;
     
 
 };

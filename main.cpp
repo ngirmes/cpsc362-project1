@@ -109,28 +109,54 @@ int main()
     main_menu:
     cout << "You are now in the main menu!";
     while (user_choice != 3){
-    cout << "\n1. Book Search\n2. Book Recommendation\n3. Exit\n\n";
+        cout << "\n1. Book Search\n2. Book Recommendation\n3. Exit\n\n";
+        cin >> user_choice;
 
-    cin >> user_choice;
+        if (user_choice == 1){
+            int  option = 0;
+            string name;    
+            ssearch book;
+            book.upload_books();
 
-    if (user_choice == 1){
+            cout << "1. Search by genre\n2. Search by title\n3.Full book list\n";
+            cin >> option;
+        
+            
+        
+            
+             if (option == 1) {
+                
+                cout << "Enter genre: \n";
+                cin >> name;
+                
+                book.getname(name);
+                book.genree();
+             
+            }
+            
+            else if (option == 2){
+                
+                cout << "Enter the name of the book: \n";
+                cin >> name;
+                
+                book.getname(name);
+                book.word(); 
+        
+            }
 
-    
-    string name;
-    ssearch book;
+            else if (option ==  3) {
+                
+                book.full_list();
 
-    cout<<"To show every available book, enter 'f', or enter a key word (case sensitive):" << endl;
+            }
 
-    cin.ignore();
-    getline(cin,name);
+            else{}
 
-    book.getbook(name);
-    book.searchfile();
-    }
+        }
 
-    if (user_choice == 2){
-         recommend();
-    }
+        if (user_choice == 2){
+            recommend();
+        }
 
     }
     cout << "Thanks for using Bookworm. Goodbye!\n";
