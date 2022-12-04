@@ -1,7 +1,7 @@
 # cpsc362-project1
 Project: Library
 Contributors: Carlos Castaneda, Salman Alsabah, Nicholas Girmes
-Date:
+Date: 12-8-22
 
 1.1 Purpose 
 <Identify the product whose software requirements are specified in this document, including the 
