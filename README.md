@@ -42,12 +42,12 @@ system), specify this as an implementation constraint.>
 This application software will be written in C++ (C17), using the IDE Visual Studio Code (V 1.71). The application can be run on Windows, Linux, or MAC OS. Our library database will be created using a .txt file that will be apart of the IDE environment. The application will start by asking the user to either login, or create and account, and will then prompt the user for the necessary itmes (username and password.) The application will then continue to ask the user to either search for a book, or take a quiz to recommend books to the user. If searching for a book, the user will be prompted to enter a title, as well as an author. When taking the quiz, the user will be asked a serious of yes or no questions to help algorithm recommend a title. Lastly, if the user enters a specific number, the application will show the user's previous purchases or rentals. Based on the user's quiz answers the application will then interact with the database to find a title that best complements the user's preferences. 
 
   TODO:
-- Activity Diagram
-- Use Case Diagram
-- CRC Diagram
-- Source Code in a zip file
-- Read Me file
-- Executable file
-- Final Presentation PPT file
-- Test Cases
+- Activity Diagram (Done)
+- Use Case Diagram (Done)
+- CRC Diagram      (Done)
+- Source Code in a zip file (Done)
+- Read Me file 
+- Executable file  (Done)
+- Final Presentation PPT file (Done)
+- Test Cases (Done)
 
