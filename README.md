@@ -1,6 +1,6 @@
 # Bookworm
-Created by: Salman Alsabah, Carlos Castaneda, Nicholas Girmes  
-CSUF - CPSC362 Fall 2022
+Created by: Salman Alsabah, Carlos Castaneda, and Nicholas Girmes  
+CSUF - CPSC362 Software Engineering, Fall 2022
 
 ---
 
