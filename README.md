@@ -8,6 +8,7 @@ Bookworm is an application that allows a user to search for a book, or obtain a 
 
 ### How to run:
 
-1. Clone the repository using git clone <http link>
+1. Clone the repository using git clone "http link"
 2. Run the executable file "CPSC362-project1.exe"
+3. For first time users, create a new account
 
