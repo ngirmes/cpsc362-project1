@@ -4,6 +4,8 @@ CSUF - CPSC362 Fall 2022
 
 ---
 
+## Description
+
 Bookworm is an application that allows a user to search for a book, or obtain a recommendation from a specified database.
 
 ### How to run:
